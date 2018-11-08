@@ -35,7 +35,7 @@ function onSet() {
     var key = document.getElementById("keytoset").value;
     var value = document.getElementById("valuetoset").value;
 
-    var useTouchID = false
+    var useTouchID = false;
 
     var win = function() {
             alert("SET SUCCESS - Key: " + key);

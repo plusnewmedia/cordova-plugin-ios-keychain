@@ -29,7 +29,7 @@ var Keychain = {
 		exec(success, error, this.serviceName, "get", [key, touchIDMessage]);
 	},
 	set: function(success, error, key, value, useTouchID) {
-		exec(success, error, this.serviceName, "set", [key, value, useTouchID]);
+		exec(success, error, this.serviceName, "set", [key, value, !!useTouchID]);
 	},
 
 	setJson: function(success, error, key, obj, useTouchID) {
@@ -44,7 +44,7 @@ var Keychain = {
 			.replace(/[\r]/g, '\\r')
 			.replace(/[\t]/g, '\\t');
 
-		exec(success, error, this.serviceName, "set", [key, value, useTouchID]);
+		exec(success, error, this.serviceName, "set", [key, value, !!useTouchID]);
 	},
 
 	getJson: function(success, error, key, touchIDMessage) {

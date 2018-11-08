@@ -7,7 +7,7 @@ Updated by Max Lynch <max@ionic.io>
 ### Installation
 
 ```shell
-cordova plugin add https://github.com/driftyco/cordova-plugin-ios-keychain
+cordova plugin add https://github.com/ionic-team/cordova-plugin-ios-keychain
 ```
 
 ### iCloud keychain enabled
